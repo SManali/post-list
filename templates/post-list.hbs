@@ -1,0 +1,18 @@
+<div class="post-list-container clearfix">
+    <div class="no-post-text">
+        <b>Sorry, currently there are no post</b>
+        <br> Stay tuned, we will shortly add new posts
+    </div>
+    <div class="delete-post-text">
+        <span class="delete-post-count"></span> post/s deleted successfully
+    </div>
+    <div class="post-summery clearfix">
+        <div class="post-counter-holder">Posts (<span class="post-count"></span>)</div>
+        <div class="category-filter">
+            {{#each postCategory}}
+            <div id="{{this.id}}" class="filter">{{this.name}}</div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="posts-container"></div>
+</div>

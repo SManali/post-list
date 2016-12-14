@@ -1,0 +1,21 @@
+<div class="comments">
+    <h3 class="comment-title">Comments</h3> {{#each comments}}
+    <div class="comment-holder clearfix" id="{{this.id}}">
+        <div class="image-holder">
+            <img src="http://placehold.it/350x150">
+        </div>
+        <div class="content">
+            <span class="commentor-name">{{this.name}}</span>
+            <span class="comment-time">{{this.time}}</span>
+            <div class="comment-text">{{this.text}}</div>
+            <div class="reply-holder">
+                {{#each this.reply}}
+                <div class="reply-text">Reply: {{this.text}}</div>
+                <div class="reply-time">{{this.time}}</div>
+                {{/each}}
+            </div>
+            <div class="reply-btn">Reply</div>
+        </div>
+    </div>
+    {{/each}}
+</div>

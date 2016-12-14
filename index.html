@@ -1,0 +1,32 @@
+<!--Doctype-->
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="vendor/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="vendor/underscore-min.js"></script>
+    <script type="text/javascript" src="vendor/backbone-min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/require.min.js"></script>
+    <title>Blog Details</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    //require config
+    require.config({
+        "baseUrl": "/",
+        "paths": {
+            "handlebars": "vendor/handlebars.runtime.min"
+        }
+
+    });
+    require(["main"], function() {
+
+    });
+    </script>
+    <div class="main-container"></div>
+</body>
+
+</html>

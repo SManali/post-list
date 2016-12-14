@@ -1,0 +1,27 @@
+{{#each posts}}
+<div class="post-{{this.index}} post-holder" id="{{this.id}}">
+    <div class="post-image-container">
+        <img src="http://placehold.it/350x150" width="100%">
+    </div>
+    <div class="post-content-container">
+        <div class="post-title post-detail-link">{{this.title}}</div>
+        <div class="post-date-time">{{this.dateTime}}</div>
+        <div class="post-description">{{this.description}}</div>
+        <div class="post-keywords">
+            {{#each this.keywords}}
+            <div class="keyword">{{this}}</div>
+            {{/each}}
+        </div>
+        <div class="short-details author" id={{this.authorId}}>
+            <span class="post-author detail">{{this.authorName}}</span>
+            <span>|</span>
+            <span class="total-comments detail">{{this.totalComments}} comments</span>
+        </div>
+        {{#if ../deleteBtn}}
+        <div class="post-options clearfix">
+            <div class="delete-post">Delete</div>
+        </div>
+        {{/if}}
+    </div>
+</div>
+{{/each}}
